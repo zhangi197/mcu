@@ -1,0 +1,19 @@
+.DS_Store
+
+# Build output and compiler intermediates
+build/
+OBJ/
+*.o
+*.d
+*.axf
+*.hex
+*.map
+*.htm
+*.lnp
+*.crf
+*.sct
+
+# Keil generated files
+Listings/
+Objects/
+*.dep

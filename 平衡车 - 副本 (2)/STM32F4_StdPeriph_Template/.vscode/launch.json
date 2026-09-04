@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug (OpenOCD + ST-Link)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/STM32F4_StdPeriph_Template.elf",
+            "servertype": "openocd",
+            "serverpath": "/opt/homebrew/bin/openocd",
+            "armToolchainPath": "/opt/homebrew/bin",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "svdFile": "",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "STM32: GCC 编译"
+        }
+    ]
+}
